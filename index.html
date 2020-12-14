@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <style>
+      ul {
+        --outside: red;
+      }
+      li {
+        background-image: paint(super-underline, 3, red);
+        height: 100px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>hello</li>
+    </ul>
+    <script>
+      CSS.paintWorklet.addModule('worklet.js');
+    </script>
+  </body>
+</html>
